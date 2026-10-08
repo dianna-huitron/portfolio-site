@@ -14,3 +14,32 @@ body {
     margin: 0;
     line-height: 1.6;
 }
+
+header img {
+    width: 88px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px; 
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
