@@ -94,7 +94,7 @@ nav a:hover {
     color: var(--text);
 }
 
-#project {
+#projects {
     padding: 50px 30px;
     text-align: center;
 }
@@ -120,13 +120,33 @@ nav a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
-    border: 1px solid rgba(196, 281, 253, 0.35);
+    border: 1px solid rgba(196, 181, 253, 0.35);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
     margin: 10px;
 } 
 
+#projects p a {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--background);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+    border: 2px solid var(--accent);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 #projects a:hover {
     opacity: 0.8;
+}
+
+#projects p a:hover {
+    background-color: var(--secondary-accent);
+    color: var(--background);
+    border-color: var(--secondary-accent);
+    opacity: 1;
+    text-decoration: none;
 }
 
 #contact {
@@ -178,4 +198,29 @@ footer {
     text-align: center;
     font-size: 0.85rem;
     color: var(--accent);
+}
+
+a {
+    color: #7dd3fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffffff;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 0.75rem;
+    color: #7dd3fc;
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #a5b4fc;
 }
