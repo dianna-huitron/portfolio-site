@@ -13,6 +13,10 @@ This is the beginning of my Portfolio. It includes some projects and description
 - images
 - folders
 - HTML comments 
+- external fonts
+
+##Other
+Additional fonts from DaFont
 
 ## Deployment
 This website will be deployed using Netlify

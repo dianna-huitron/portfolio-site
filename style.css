@@ -1,228 +1,233 @@
 :root {
-    --background: #111827;
-    --surface: #1e293b;
-    --accent: #7dd3fc;
-    --secondary-accent: #c4b5fd;
-    --text: #f8fafc;
+  --background: #111827;
+  --surface: #1e293b;
+  --accent: #7dd3fc;
+  --secondary-accent: #c4b5fd;
+  --text: #f8fafc;
 }
 
-
 body {
-    font-family: times new roman, serif;
-    background-color: var(--background);
-    color: var(--text);
-    margin: 0;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.6;
 }
 
 header img {
-    width: 88px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  width: 88px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
-    display: inline;
-    margin: 0 15px; 
+  display: inline;
+  margin: 0 15px;
 }
 
 nav a {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 nav a:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 #hero {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: var(--background); 
-    /* try using surface */
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--background);
+  /* try using surface */
 }
 
 #hero h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    letter-spacing: 0.03em;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
 }
 
 #hero img {
-    width: 150px;
-    height: 140px;
-    border-radius: 50%;
-    border: 4px solid var(--accent);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 150px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 #hero p {
-    max-width: 600px;
-    margin: 25px auto;
-    font-size: 1.2rem;
-    color: var(--accent);
+  max-width: 600px;
+  margin: 25px auto;
+  font-size: 1.2rem;
+  color: var(--accent);
 }
 
-#about { 
-    background-color: var(--surface);
-    padding: 50px 30px;
-    margin: 20px;
-    border-radius: 20px;
-    border: 1px solid rgba(125, 211, 252, 0.25);
+#about {
+  background-color: var(--surface);
+  padding: 50px 30px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(125, 211, 252, 0.25);
 }
 
 #about h2 {
-    font-size: 2.5rem;
-    color: var(--accent);
-    margin-bottom: 20px;
-    letter-spacing: 0.03em;
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
 }
 
 #about p {
-    max-width: 800px;
-    margin: 25px auto;
-    font-size: 1.1rem;
-    color: var(--text);
+  max-width: 800px;
+  margin: 25px auto;
+  font-size: 1.1rem;
+  color: var(--text);
 }
 
 #projects {
-    padding: 50px 30px;
-    text-align: left;
+  padding: 50px 30px;
+  text-align: left;
 }
 
 #projects h2 {
-    font-size: 2.8rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 #projects h3 {
-    color: var(--accent);
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: left;
+  color: var(--accent);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#projects h3 + p {
+  margin-top: 5px;
 }
 
 #projects p {
-    max-width: 750px;
-    margin: 15px auto;
-    text-align: left;
+  max-width: 750px;
+  margin: 15px 0;
+  text-align: left;
 }
 
 #projects img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    border: 1px solid rgba(196, 181, 253, 0.35);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-    margin: 10px;
-} 
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(196, 181, 253, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+}
 
 #projects p a {
-    display: inline-block;
-    background-color: var(--accent);
-    color: var(--background);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin: 10px;
-    border: 2px solid var(--accent);
-    transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px;
+  border: 2px solid var(--accent);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 #projects a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 #projects p a:hover {
-    background-color: var(--secondary-accent);
-    color: var(--background);
-    border-color: var(--secondary-accent);
-    opacity: 1;
-    text-decoration: none;
+  background-color: var(--secondary-accent);
+  color: var(--background);
+  border-color: var(--secondary-accent);
+  opacity: 1;
+  text-decoration: none;
 }
 
 #contact {
-    background-color: var(--surface);
-    padding: 40px 30px;
-    margin: 20px;
-    border-radius: 20px;
-    border: 1px solid rgba(125, 211, 252, 0.25);
-    text-align: center;
+  background-color: var(--surface);
+  padding: 40px 30px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  text-align: center;
 }
 
 #contact h2 {
-    font-size: 2.5rem;
-    color: var(--accent);
-    letter-spacing: 0.05em;
+  font-size: 2.5rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
 }
 
 #contact ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 #contact li {
-    margin: 12px 0;
+  margin: 12px 0;
 }
 
 #contact a {
-    color: var(--accent);
-    text-decoration: none;
+  color: var(--accent);
+  text-decoration: none;
 }
 
 #contact a:hover {
-    color: var(--text);
-    text-decoration: none;
+  color: var(--text);
+  text-decoration: none;
 }
 
 #contact p {
-    max-width: 600px;
-    margin: 25px auto;
-    font-size: 1.1rem;
-    color: var(--text);
+  max-width: 600px;
+  margin: 25px auto;
+  font-size: 1.1rem;
+  color: var(--text);
 }
 
 footer {
-    background-color: var(--surface);
-    padding: 20px 30px;
-    margin-top: 40px;
-    border-top: 1px solid var(--accent);
-    text-align: center;
-    font-size: 0.85rem;
-    color: var(--accent);
+  background-color: var(--surface);
+  padding: 20px 30px;
+  margin-top: 40px;
+  border-top: 1px solid var(--accent);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--accent);
 }
 
 a {
-    color: #7dd3fc;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #7dd3fc;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ffffffff;
-    text-decoration: underline;
+  color: #ffffffff;
+  text-decoration: underline;
 }
 
 h3 {
-    font-size: 1.6rem;
-    margin-top: 3rem;
-    margin-bottom: 0.75rem;
-    color: #7dd3fc;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+  color: #7dd3fc;
 }
 
 h4 {
-    font-size: 1.4rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #a5b4fc;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #a5b4fc;
 }
