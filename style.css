@@ -72,3 +72,59 @@ nav a:hover {
     color: var(--accent);
 }
 
+#about { 
+    background-color: var(--surface);
+    padding: 50px 30px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(125, 211, 252, 0.25);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 25px auto;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+#project {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#projects h3 {
+    color: var(--accent);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#projects p {
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+#projects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(196, 281, 253, 0.35);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+} 
+
+#projects a:hover {
+    opacity: 0.8;
+}
