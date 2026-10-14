@@ -1,13 +1,18 @@
 :root {
-  --background: #111827;
-  --surface: #1e293b;
-  --accent: #7dd3fc;
+  --background: #efedeb;
+  --surface: #fbfaf9;
+  --accent: #7b4b46;
   --secondary-accent: #c4b5fd;
   --text: #f8fafc;
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "DM Sans", Arial, sans-serif;
+  --radius: 20px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --border-soft: 1px solid rgba(125, 211, 252, 0.25);
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-body);
   background-color: var(--background);
   color: var(--text);
   margin: 0;
@@ -65,7 +70,7 @@ nav a:hover {
 }
 
 #hero p {
-  max-width: 600px;
+  min-width: 300px;
   margin: 25px auto;
   font-size: 1.2rem;
   color: var(--accent);
