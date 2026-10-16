@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 :root {
   --background: #efedeb;
   --surface: #fbfaf9;
@@ -5,8 +9,8 @@
   --secondary-accent: #73a5c6;
   --tertiary-accent: #c0c0c0;
   --text: #333;
-  --font-heading: "Playfair Display", Georgia, serif;
-  --font-body: "DM Sans", Arial, sans-serif;
+  --font-heading: "Ballet", cursive;
+  --font-body: "Fira Code" ;
   --radius: 20px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   --border-soft: 1px solid rgba(125, 211, 252, 0.25);
@@ -98,7 +102,7 @@ nav a:hover {
 
 #hero p {
   width: 100%;
-  min-width: 300px;
+  min-width: 700px;
   margin: 25px auto;
   font-size: 1.2rem;
   color: var(--accent);
@@ -129,6 +133,25 @@ nav a:hover {
 
 #projects {
   margin: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: var(--surface);
+  border: 1px solid var(--tertiary-accent);
+  border-radius: var(--radius);
+  padding: 24px;
+  min-width: 0;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
 }
 
 #projects h2 {
