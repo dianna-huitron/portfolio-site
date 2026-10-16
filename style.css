@@ -31,6 +31,7 @@ body {
 
 header img {
   width: 88px;
+  height: auto;
   border-radius: 50%;
   margin-bottom: 10px;
   /* border: 3px solid var(--secondary-accent); */
@@ -92,6 +93,14 @@ nav a:hover {
   letter-spacing: 0.03em;
 }
 
+/* ai assistance with how to separate the first letter */
+#hero h1::first-letter {
+  font-family: var(--font-heading);
+  color: var(--accent);
+  font-size: 4rem;
+  margin-right: 5px;
+}
+
 #hero img {
   width: 150px;
   height: 140px;
@@ -122,6 +131,13 @@ nav a:hover {
   color: var(--accent);
   margin-bottom: 20px;
   letter-spacing: 0.03em;
+}
+
+#about h2::first-letter {
+  font-family: var(--font-heading);
+  color: var(--accent);
+  font-size: 3.5rem;
+  margin-right: 5px;
 }
 
 #about p {
@@ -158,6 +174,13 @@ nav a:hover {
   font-size: 2.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+#projects h2::first-letter {
+  font-family: var(--font-heading);
+  color: var(--accent);
+  font-size: 3.5rem;
+  margin-right: 5px;
 }
 
 #projects h3 {
@@ -227,6 +250,13 @@ nav a:hover {
   letter-spacing: 0.05em;
 }
 
+#contact h2::first-letter {
+  font-family: var(--font-heading);
+  color: var(--accent);
+  font-size: 3.5rem;
+  margin-right: 5px;
+}
+
 #contact ul {
   list-style-type: none;
   padding: 0;
@@ -292,6 +322,26 @@ h4 {
   margin-bottom: 0.5rem;
   color: #a5b4fc;
 }
+
+
+
+/*
+AI Assistance Documentation
+
+Prompt: Help me understand how to use CSS media queries
+and CSS Grid to change the number of columns in my
+portfolio's project section at different screen sizes.
+I want the project cards to display in one column on
+mobile screens, two columns on tablet screens, and
+three columns on larger desktop screens. Explain how
+to use mobile-first design with min-width breakpoints
+without changing my HTML.
+
+AI Output: Provided guidance on using CSS Grid with
+grid-template-columns and min-width media queries
+to adjust the number of project columns based on
+screen width.
+*/
 
 /* beginning of other media queries */
 @media (min-width: 600px) {
