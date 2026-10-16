@@ -1,9 +1,10 @@
 :root {
   --background: #efedeb;
   --surface: #fbfaf9;
-  --accent: #7b4b46;
-  --secondary-accent: #c4b5fd;
-  --text: #f8fafc;
+  --accent: #1f2f5d;
+  --secondary-accent: #73a5c6;
+  --tertiary-accent: #c0c0c0;
+  --text: #333;
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "DM Sans", Arial, sans-serif;
   --radius: 20px;
@@ -11,18 +12,24 @@
   --border-soft: 1px solid rgba(125, 211, 252, 0.25);
 }
 
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--background);
   color: var(--text);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 header img {
   width: 88px;
   border-radius: 50%;
   margin-bottom: 10px;
+  /* border: 3px solid var(--secondary-accent); */
 }
 
 nav ul {
@@ -32,7 +39,7 @@ nav ul {
 }
 
 nav li {
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
 }
 
@@ -70,18 +77,20 @@ nav a:hover {
 }
 
 #hero p {
+  width: 100%;
   min-width: 300px;
   margin: 25px auto;
   font-size: 1.2rem;
   color: var(--accent);
 }
 
+
 #about {
   background-color: var(--surface);
   padding: 50px 30px;
   margin: 20px;
   border-radius: 20px;
-  border: 1px solid rgba(125, 211, 252, 0.25);
+  border: 4px solid var(--tertiary-accent);
 }
 
 #about h2 {
@@ -213,14 +222,19 @@ footer {
 }
 
 a {
-  color: #7dd3fc;
+  color: var(--accent);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffffffff;
+  color: var(--text);
   text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px dashed var(--accent);
+  outline-offset: 4px;
 }
 
 h3 {
@@ -235,4 +249,28 @@ h4 {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   color: #a5b4fc;
+}
+
+@media (max-width: 600px) {
+  #hero {
+    padding: 50px 20px;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  nav li {
+    display: block;
+    margin: 6px 8px;
+  }
+
+  #about, #contact {
+    margin: 12px;
+    padding: 30px 20px;
+  }
+
+  #projects {
+    padding: 30px 20px;
+  }
 }
