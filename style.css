@@ -36,11 +36,14 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
 }
 
 nav li {
-  display: inline-block;
-  margin: 0 15px;
+  margin: 0;
 }
 
 nav a {
@@ -69,6 +72,7 @@ nav a:hover {
   border-color: var(--accent);
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(123, 75, 70, 0.3);
+  text-decoration: none;
 }
 
 #hero {
