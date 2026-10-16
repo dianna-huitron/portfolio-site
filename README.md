@@ -16,7 +16,10 @@ This is the beginning of my Portfolio. It includes some projects and description
 - external fonts
 
 ##Other
-Additional fonts from DaFont
+Used Google Fonts to import fonts:
+    - Ballet 
+    - Fira Code
+Additional fonts in folder from DaFonts
 
 ## Deployment
 This website will be deployed using Netlify
