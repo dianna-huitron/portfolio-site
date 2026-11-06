@@ -29,6 +29,12 @@ body {
   line-height: 1.7;
 }
 
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 60px);
+}
+
 header img {
   width: 88px;
   height: auto;
@@ -111,7 +117,7 @@ nav a:hover {
 
 #hero p {
   width: 100%;
-  min-width: 700px;
+  max-width: 700px;
   margin: 25px auto;
   font-size: 1.25rem;
   color: var(--accent);
@@ -121,9 +127,9 @@ nav a:hover {
 #about {
   background-color: var(--surface);
   padding: 30px 20px;
-  margin: 12px;
+  margin: 12px 0;
   border-radius: 20px;
-  border: 4px solid var(--tertiary-accent);
+  border: 3px solid var(--tertiary-accent);
 }
 
 #about h2 {
@@ -153,7 +159,7 @@ nav a:hover {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -239,7 +245,7 @@ nav a:hover {
 #contact {
   background-color: var(--surface);
   padding: 30px 20px;
-  margin: 12px;
+  margin: 12px 0;
   border-radius: 20px;
   border: 3px solid var(--tertiary-accent);
   text-align: center;
@@ -347,10 +353,6 @@ screen width.
 
 /* beginning of other media queries */
 @media (min-width: 600px) {
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   #hero {
     padding: 60px 30px;
   }
@@ -371,14 +373,13 @@ screen width.
   }
 
   #projects {
-    padding: 50px 40px;
+    padding: 50px 0;
   }
 }
 
 /* desktop or larger screens */
 @media (min-width: 1200px) {
   .project-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
   }
 
@@ -387,8 +388,6 @@ screen width.
   }
 
   #projects {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 60px 40px;
+    padding: 60px 0;
   }
 }
