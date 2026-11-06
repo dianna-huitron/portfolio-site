@@ -314,7 +314,7 @@ h3 {
   font-size: 1.6rem;
   margin-top: 3rem;
   margin-bottom: 0.75rem;
-  color: #7dd3fc;
+  color: var(--accent);
 }
 
 h4 {
