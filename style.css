@@ -16,6 +16,19 @@
   --border-soft: 1px solid rgba(125, 211, 252, 0.25);
 }
 
+/* Dark mode color palette */
+html[data-theme='dark'] {
+  --background: #171d2b;
+  --surface: #252e40;
+  --accent: #a9cce5;
+  --secondary-accent: #73a5c6;
+  --tertiary-accent: #a2b1ca;
+  --text: #e8edf5;
+
+  --shadow: 10px 30px rgba(0, 0, 0, 0.5);
+  --border-soft: 1px solid rgba(169, 204, 229, 0.2);
+}
+
 /* Base Styles */
 * {
   box-sizing: border-box;
