@@ -34,3 +34,5 @@ themeToggle.addEventListener("click", function() {
     // Update the toggle button
     updateToggle(currentTheme);
 });
+
+console.log(ScrollReveal); // Check if ScrollReveal is loaded
